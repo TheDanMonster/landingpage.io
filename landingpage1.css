@@ -1,0 +1,151 @@
+@import url(http://fonts.googleapis.com/css?family=Merriweather);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans); /* closest I could get to Myraid Pro*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+	font-family: PT Sans, 'Merriweather', serif;
+	padding-top: 200px;
+	text-align: center;
+	margin: auto;
+	background-image:url("https://newevolutiondesigns.com/images/freebies/abstract-background-20.jpg");
+	/* the above image was provided newevolutiondesigns*/
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-attachment: relative;
+	background-origin: padding-box;
+	color: #FFFFFF;
+}
+aside {
+	font-size: 150%; /* welcome header */
+}
+
+h1 a { /* link color for welcome header */
+  color: #FFF;
+  font-size: 200%;
+  text-decoration: none;
+}
+
+.box {
+  padding: 2em;
+  border: 8px solid #ccc;
+  border-radius: 100%;
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
+  height: 300px;
+  margin:5px;
+  /*-1px 0 0 -1px; (alternative)*/
+  color: black;
+  background: linear-gradient( white, white 50%, #00599C 50%, #00599C);
+  background-size: 100% 205%;
+  transition: all 0.2s ease;
+  animation: down-bump 0.4s ease;
+}
+
+.box h2 {
+  /* description of each reference */
+  font-weight: 400;
+  letter-spacing: -1.5px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.underwriting {
+  font-size: 150%;
+}
+
+.IT {
+  font-size: 150%;
+}
+
+.claims {
+  font-size: 150%;
+}
+
+.hr {
+  font-size: 150%;
+}
+
+.box h3 {
+  /*updated date */
+  font: 0.8em "Lucida Grande", serif;
+  text-align: center;
+}
+
+.box:hover {
+  background-position: 100% 100%;
+  animation: up-bump 0.4s ease;
+}
+
+.box:hover h2 {
+  color: #C8C8CA;
+  /* navy blue */
+}
+
+.box:hover h2 span {
+  color: white;
+}
+
+.box:hover h3 {
+  color: #ECECED;
+  /* grey */
+}
+/* flip animation for Coming Soon! alternative
+.flip-container {
+	perspective: 1000px;
+}
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+	transform: rotateY(180deg);
+}
+.flip-container, .front, .back {
+	width: auto;
+	height: auto;
+}
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.front {
+	z-index: 2;
+	transform: rotateY(0deg);
+}
+.back {
+	transform: rotateY(180deg);
+}*/
+
+
+/* fun little animation to provide that interactive feel */
+
+@keyframes up-bump {
+  0% {
+    padding-top: 2em;
+  }
+  50% {
+    padding-top: 1.5em;
+  }
+  100% {
+    padding-top: 2em;
+  }
+}
+
+@keyframes down-bump {
+  0% {
+    padding-top: 2em;
+  }
+  50% {
+    padding-top: 2.5em;
+  }
+  100% {
+    padding-top: 2em;
+  }
+}
